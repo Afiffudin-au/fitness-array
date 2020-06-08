@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Experiment</title>
+  <style>
+    *{
+      text-decoration: none;
+      outline: 0;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container{
+      width: 30%;
+      margin: auto;
+      text-align: center;
+      background-color: rgb(158, 243, 137);
+    }
+    input:first-child{
+      margin-top: 10px;
+    }
+    option,select,input,button{
+      margin-bottom: 10px;
+      border: none;
+      padding: 10px;
+      width: 80%;
+    }
+   table{
+     width: 80%;
+     margin: 5px auto;
+   }
+   td{
+     width: 20%;
+   }
+    td, th  { 
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    }
+
+    tr:nth-child(even) {
+    background-color: #dddddd;
+    }
+    @media(max-width: 320px){
+      .container{
+        padding: 10px;
+        width: 90%;
+      }
+      input,button{
+        width: 100%;
+      }
+    }
+    @media(max-width: 480px){
+      .container{
+        padding: 10px;
+        width: 90%;
+      }
+      input,button{
+        width: 100%;
+      }
+    }
+    @media(max-width: 992px){
+      .container{
+        padding: 10px;
+        width: 60%;
+      }
+      input,button{
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <select class="SelectSort">
+      <option name="">Select Sort</option>
+      <option name="sort-age" value="sortAge">Sort Age ⬇ </option>
+      <option name="sort-age-up" value="sortAgeUp">Sort Age ⬆ </option>
+    </select>
+    <input type="number" class="number-filter" placeholder="Search Age By">
+    <input type="text" class="Find-first" placeholder="Find First Name">
+    <input type="text" class="Find-last" placeholder="Find Last Name">
+    <input type="text" class="Find-city" placeholder="Find City">
+    <button type="button" class="btn">Search</button>
+  </div>
+  <ul class="show">
+
+  </ul>
+  <script src="app.js"></script>
+</body>
+</html>
